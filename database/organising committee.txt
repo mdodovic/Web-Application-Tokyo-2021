@@ -1,0 +1,99 @@
+{
+    "username": "organiser",
+    "password": "Op@ss21_1",
+    "firstname": "Nikita",
+    "lastname": "Sakamura",
+    "nationality": "Japan",
+    "email": "organiser@tokyo.oi",
+    "type": "organiser",
+    "accepted": 1
+}
+
+{
+    "username": "inoue_delegate",
+    "password": "Dp@ss21_it",
+    "firstname": "Inoue",
+    "lastname": "Toshihiko",
+    "nationality": "Japan",
+    "email": "inoue.delegate@tokyo.oi",
+    "type": "delegate",
+    "accepted": 1
+}
+
+{
+    "username": "tanio_delegate",
+    "password": "Dp@ss21_ta",
+    "firstname": "Tanio",
+    "lastname": "Ami",
+    "nationality": "Japan",
+    "email": "tanio.delegate@tokyo.oi",
+    "type": "delegate",
+    "accepted": 1
+}
+
+{
+    "username": "osawa_delegate",
+    "password": "Dp@ss21_om",
+    "firstname": "Osawa",
+    "lastname": "Masaaki",
+    "nationality": "Japan",
+    "email": "osawa.delegate@tokyo.oi",
+    "type": "delegate",
+    "accepted": 1
+}
+
+{
+    "username": "bamba_delegate",
+    "password": "Dp@ss21_bm",
+    "firstname": "Bamba",
+    "lastname": "Michiyo",
+    "nationality": "Japan",
+    "email": "bamba.delegate@tokyo.oi",
+    "type": "delegate",
+    "accepted": 1
+}
+
+{
+    "username": "li_delegate",
+    "password": "Dp@ss21_lj",
+    "firstname": "Li",
+    "lastname": "Jasmine",
+    "nationality": "Japan",
+    "email": "li.delegate@tokyo.oi",
+    "type": "delegate",
+    "accepted": 1
+}
+
+{
+    "username": "fra_pijer",
+    "password": "fra_P123_",
+    "firstname": "Pijer",
+    "lastname": "Lenonso",
+    "nationality": "France",
+    "email": "pijer.leader@tokyo.oi",
+    "type": "nationalLeader",
+    "accepted": 1
+}
+
+{
+    "username": "spa_karlos",
+    "password": "spa_K123_",
+    "firstname": "Karlos",
+    "lastname": "Agatoni",
+    "nationality": "Spain",
+    "email": "karlos.leader@tokyo.oi",
+    "type": "nationalLeader",
+    "accepted": 1
+}
+
+{
+    "username": "por_dominikos",
+    "password": "por_D123_",
+    "firstname": "Dominikos",
+    "lastname": "Persivali",
+    "nationality": "Portuguese",
+    "email": "dominikos.leader@tokyo.oi",
+    "type": "nationalLeader",
+    "accepted": 1
+}
+
