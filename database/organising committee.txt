@@ -1,11 +1,11 @@
 {
-    "username": "organiser",
+    "username": "organizer",
     "password": "Op@ss21_1",
     "firstname": "Nikita",
     "lastname": "Sakamura",
     "nationality": "Japan",
-    "email": "organiser@tokyo.oi",
-    "type": "organiser",
+    "email": "organizer@tokyo.oi",
+    "type": "organizer",
     "accepted": 1
 }
 
