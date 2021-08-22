@@ -1,0 +1,300 @@
+{
+    "name": "Košarka",
+    "disciplines": [
+		{
+			"disciplineName": null,
+			"single": false,
+			"minPlayers": 5,
+			"maxPlayers": 12,
+			"accepted": false
+		}
+	]
+}
+
+{
+    "name": "Odbojka",
+    "disciplines": [
+		{
+			"disciplineName": null,
+			"single": false,
+			"minPlayers": 6,
+			"maxPlayers": 12,
+			"accepted": false
+		}
+	]
+}
+
+
+{
+    "name": "Vaterpolo",
+    "disciplines": [
+		{
+			"disciplineName": null,
+			"single": false,
+			"minPlayers": 6,
+			"maxPlayers": 13,
+			"accepted": false
+		}
+	]
+}
+
+{
+    "name": "Atletika",
+    "disciplines": [
+		{
+			"disciplineName": "100m trčanje",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+		{
+			"disciplineName": "100m štafeta",
+			"single": false,
+			"minPlayers": 4,
+			"maxPlayers": 4,
+			"accepted": false
+		},
+
+		{
+			"disciplineName": "200m trčanje",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "400m trčanje",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "400m štafeta",
+			"single": false,
+			"minPlayers": 4,
+			"maxPlayers": 4,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "800m trčanje",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "5000m trčanje",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "10000m trčanje",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "skok u vis",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+		{
+			"disciplineName": "skok u dalj",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "troskok",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "skok s motkom",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "bacanje kugle",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "bacanje diska",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "bacanje kladiva",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "bacanje koplja",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "maraton",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+
+		{
+			"disciplineName": "20km brzo hodanje",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+
+		{
+			"disciplineName": "50km brzo hodanje",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		}
+	]
+}
+
+
+{
+    "name": "Biciklizam",
+	"disciplines": [
+		{
+			"disciplineName": "225km drumska trka",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		}
+	]
+}
+
+
+{
+    "name": "Plivanje",
+	"disciplines": [
+		{
+			"disciplineName": "100m leptir",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+		{
+			"disciplineName": "200m slobodno",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		}
+	]
+
+}
+
+{
+    "name": "Streljaštvo",
+	"disciplines": [
+		{
+			"disciplineName": "50m trostav",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+		{
+			"disciplineName": "10m vazdušna puška",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+		{
+			"disciplineName": "25m malokalibarski pištolj",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+		{
+			"disciplineName": "10m vazdušni pištolj",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		}
+
+	]
+}
+
+{
+    "name": "Tenis",
+	"disciplines": [
+		{
+			"disciplineName": "singl",
+			"single": true,
+			"minPlayers": null,
+			"maxPlayers": null,
+			"accepted": false
+		},
+		{
+			"disciplineName": "dubl",
+			"single": false,
+			"minPlayers": 2,
+			"maxPlayers": 2,
+			"accepted": false
+		}
+	]
+}

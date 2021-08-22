@@ -1,0 +1,31 @@
+{
+    "year": 2012,
+    "place": "London",
+    "discipline": "100m trčanje",
+    "competitor": "Jusein Bolt",
+    "nationality": "Jamajka",
+    "result": 9.63,
+    "gender": muško
+}
+
+{
+    "year": 2008,
+    "place": "Peking",
+    "discipline": "200m trčanje",
+    "competitor": "Jusein Bolt",
+    "nationality": "Jamajka",
+    "result": 19.3,
+    "gender": muško
+}
+
+{
+    "year": 2016,
+    "place": "Rio de Žaneiro",
+    "discipline": "400m trčanje",
+    "competitor": "Vejd van Nikerk",
+    "nationality": "Južnoafrička Republika",
+    "result": 43.03,
+    "gender": muško
+}
+
+

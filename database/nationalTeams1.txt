@@ -1,0 +1,1872 @@
+{
+	"nationality": "Francuska",
+	"sportName": "Košarka",
+	"disciplineName": null,
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Košarka",
+	"disciplineName": null,
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Odbojka",
+	"disciplineName": null,
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Odbojka",
+	"disciplineName": null,
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Vaterpolo",
+	"disciplineName": null,
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Vaterpolo",
+	"disciplineName": null,
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "100m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "100m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "100m štafeta",
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "100m štafeta",
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "200m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "200m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "400m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "400m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "400m štafeta",
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "400m štafeta",
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "800m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "800m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "5000m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "5000m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "10000m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "10000m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "skok u vis",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "skok u vis",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "skok u dalj",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "skok u dalj",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "troskok",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "troskok",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "skok s motkom",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "skok s motkom",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kugle",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kugle",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje diska",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje diska",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kladiva",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kladiva",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje koplja",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje koplja",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "maraton",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "maraton",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "20km brzo hodanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "20km brzo hodanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "50km brzo hodanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Atletika",
+	"disciplineName": "50km brzo hodanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Biciklizam",
+	"disciplineName": "225km drumska trka",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Biciklizam",
+	"disciplineName": "225km drumska trka",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Plivanje",
+	"disciplineName": "100m leptir",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Plivanje",
+	"disciplineName": "100m leptir",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Plivanje",
+	"disciplineName": "200m slobodno",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Plivanje",
+	"disciplineName": "200m slobodno",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "50m trostav",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "50m trostav",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušna puška",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušna puška",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "25m malokalibarski pištolj",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "25m malokalibarski pištolj",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušni pištolj",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušni pištolj",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "singl",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Streljaštvo",
+	"disciplineName": "singl",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Tenis",
+	"disciplineName": "dubl",
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Francuska",
+	"sportName": "Tenis",
+	"disciplineName": "dubl",
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Košarka",
+	"disciplineName": null,
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Košarka",
+	"disciplineName": null,
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Odbojka",
+	"disciplineName": null,
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Odbojka",
+	"disciplineName": null,
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Vaterpolo",
+	"disciplineName": null,
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Vaterpolo",
+	"disciplineName": null,
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "100m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "100m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "100m štafeta",
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "100m štafeta",
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "200m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "200m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "400m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "400m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "400m štafeta",
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "400m štafeta",
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "800m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "800m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "5000m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "5000m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "10000m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "10000m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "skok u vis",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "skok u vis",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "skok u dalj",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "skok u dalj",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "troskok",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "troskok",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "skok s motkom",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "skok s motkom",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kugle",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kugle",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje diska",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje diska",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kladiva",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kladiva",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje koplja",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje koplja",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "maraton",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "maraton",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "20km brzo hodanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "20km brzo hodanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "50km brzo hodanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Atletika",
+	"disciplineName": "50km brzo hodanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Biciklizam",
+	"disciplineName": "225km drumska trka",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Biciklizam",
+	"disciplineName": "225km drumska trka",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Plivanje",
+	"disciplineName": "100m leptir",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Plivanje",
+	"disciplineName": "100m leptir",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Plivanje",
+	"disciplineName": "200m slobodno",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Plivanje",
+	"disciplineName": "200m slobodno",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "50m trostav",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "50m trostav",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušna puška",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušna puška",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "25m malokalibarski pištolj",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "25m malokalibarski pištolj",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušni pištolj",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušni pištolj",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "singl",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Streljaštvo",
+	"disciplineName": "singl",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Tenis",
+	"disciplineName": "dubl",
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Španija",
+	"sportName": "Tenis",
+	"disciplineName": "dubl",
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Košarka",
+	"disciplineName": null,
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Košarka",
+	"disciplineName": null,
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Odbojka",
+	"disciplineName": null,
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Odbojka",
+	"disciplineName": null,
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Vaterpolo",
+	"disciplineName": null,
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Vaterpolo",
+	"disciplineName": null,
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "100m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "100m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "100m štafeta",
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "100m štafeta",
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "200m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "200m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "400m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "400m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "400m štafeta",
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "400m štafeta",
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "800m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "800m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "5000m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "5000m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "10000m trčanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "10000m trčanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "skok u vis",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "skok u vis",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "skok u dalj",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "skok u dalj",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "troskok",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "troskok",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "skok s motkom",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "skok s motkom",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kugle",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kugle",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje diska",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje diska",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kladiva",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje kladiva",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje koplja",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "bacanje koplja",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "maraton",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "maraton",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "20km brzo hodanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "20km brzo hodanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "50km brzo hodanje",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Atletika",
+	"disciplineName": "50km brzo hodanje",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Biciklizam",
+	"disciplineName": "225km drumska trka",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Biciklizam",
+	"disciplineName": "225km drumska trka",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Plivanje",
+	"disciplineName": "100m leptir",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Plivanje",
+	"disciplineName": "100m leptir",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Plivanje",
+	"disciplineName": "200m slobodno",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Plivanje",
+	"disciplineName": "200m slobodno",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "50m trostav",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "50m trostav",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušna puška",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušna puška",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "25m malokalibarski pištolj",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "25m malokalibarski pištolj",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušni pištolj",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "10m vazdušni pištolj",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "singl",
+	"gender": "man",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Streljaštvo",
+	"disciplineName": "singl",
+	"gender": "woman",
+	"single": true,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Tenis",
+	"disciplineName": "dubl",
+	"gender": "man",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+
+{
+	"nationality": "Portugal",
+	"sportName": "Tenis",
+	"disciplineName": "dubl",
+	"gender": "woman",
+	"single": false,
+	"players": [],
+	"accepted": false	
+}
+

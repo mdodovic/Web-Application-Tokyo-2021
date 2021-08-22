@@ -1,0 +1,48 @@
+{
+    "firstname": "Novak",
+    "lastname": "Đoković",
+	"gender": "man",
+	"sportName": "Tenis",
+	"nationality": "Srbija",
+	"disciplines": [
+		"singl",
+		"dubl"
+	]
+}
+
+{
+    "firstname": "Filip",
+    "lastname": "Krainović",
+	"gender": "man",
+	"sportName": "Tenis",
+	"nationality": "Srbija",
+	"disciplines": [
+		"singl",
+		"dubl"
+	]
+}
+
+{
+    "firstname": "Ivana",
+    "lastname": "Španović",
+	"gender": "woman",
+	"sportName": "Atletika",
+	"nationality": "Srbija",
+	"disciplines": [
+		"skok u vis", 
+		"skok u dalj", 
+		"skok s motkom"		
+	]
+}
+
+{
+    "firstname": "Miloš",
+    "lastname": "Teodosić",
+	"gender": "man",
+	"sportName": "Košarka",
+	"nationality": "Srbija",
+	"disciplines": null
+}
+
+
+

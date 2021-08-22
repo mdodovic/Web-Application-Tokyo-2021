@@ -69,7 +69,7 @@
     "password": "fra_P123_",
     "firstname": "Pijer",
     "lastname": "Lenonso",
-    "nationality": "France",
+    "nationality": "Francuska",
     "email": "pijer.leader@tokyo.oi",
     "type": "nationalLeader",
     "accepted": 1
@@ -80,7 +80,7 @@
     "password": "spa_K123_",
     "firstname": "Karlos",
     "lastname": "Agatoni",
-    "nationality": "Spain",
+    "nationality": "Španija",
     "email": "karlos.leader@tokyo.oi",
     "type": "nationalLeader",
     "accepted": 1
@@ -91,7 +91,7 @@
     "password": "por_D123_",
     "firstname": "Dominikos",
     "lastname": "Persivali",
-    "nationality": "Portuguese",
+    "nationality": "Portugal",
     "email": "dominikos.leader@tokyo.oi",
     "type": "nationalLeader",
     "accepted": 1
