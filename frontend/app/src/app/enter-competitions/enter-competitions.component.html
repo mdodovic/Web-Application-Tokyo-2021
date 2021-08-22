@@ -1,0 +1,148 @@
+<mat-menu>
+</mat-menu>
+
+<div class="container-fluid">
+
+    <div class="row enterCompetitionMenu">
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="finishCompetitionsFormation()" class="matMenuFont">Vrati se nazad</button>
+        </div>
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="confirmCompetition()" class="matMenuFont">Potvrdi ekipu</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="enterCompetitionMenu">
+    <table class="table table-striped">
+        <tbody>
+
+            <tr>
+                <td>Sport</td>
+                <td>
+                    <div *ngIf="choosenSport">Disciplina</div>
+                </td>
+                <td>
+                    <div *ngIf="showGender">Pol</div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <select name="choosenSport" [(ngModel)]="choosenSport" (ngModelChange)="sportIsChoosen()">
+                        <option *ngFor='let s of sports' [ngValue]="s">{{s.name}}</option>
+                    </select>
+                </td>
+
+                <td>
+                    <div *ngIf="choosenSport && hasDisciplines">
+                        <select name="choosenDiscipline" [(ngModel)]="choosenDiscipline"
+                            (ngModelChange)="disciplineIsChoosen()">
+                            <option *ngFor='let d of disciplines' [ngValue]="d">{{d.disciplineName}}
+                            </option>
+                        </select>
+                    </div>
+                    <div *ngIf="choosenSport && !hasDisciplines">
+                        Nema
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="showGender">
+                        <select name="choosenGender" [(ngModel)]="choosenGender" (ngModelChange)="genderIsChoosen()">
+                            <option *ngFor='let g of genders' [ngValue]="g.english">{{g.serbia}}</option>
+                        </select>
+                    </div>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td> <span *ngIf='errorNoSport' class="errorClass">{{errorNoSport}}</span></td>
+                <td> <span *ngIf='errorNoDiscipline' class="errorClass">{{errorNoDiscipline}}</span></td>
+                <td> <span *ngIf='errorNoGender' class="errorClass">{{errorNoGender}}</span></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+<div class="enterCompetitionMenu" *ngIf="showFormForCompetition">
+    <table class="table table-striped">
+        <tbody>
+
+            <tr>
+                <td>
+                    <div *ngIf="!hasDisciplines">Grupe</div>
+                </td>
+                <td>
+                    <div *ngIf="!hasDisciplines">Broj ekipa</div>
+                    <div *ngIf="hasDisciplines">Broj takmičara</div>
+                </td>
+                <td>
+                    Broj rundi
+                </td>
+                <td>
+                    Tip rezultata
+                </td>
+                <td>
+                    Format rezultata
+                </td>
+                <td>
+                    Komentar
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div *ngIf="!hasDisciplines">
+                        <input type="number" name="groupNumber" [(ngModel)]="groupNumber">
+                    </div>
+                </td>
+
+                <td>
+
+                    <input id="manGender" type="radio" name="gender" value="man" [(ngModel)]="gender">
+                    <label for="manGender">Muško</label>
+                    &nbsp;
+                    <input id="womanGender" type="radio" name="gender" value="woman" [(ngModel)]="gender">
+                    <label for="womanGender">Žensko</label>
+
+
+
+                    <input type="number" name="minRepresentativesNumber" [(ngModel)]="minRepresentativesNumber">
+                </td>
+                <td>
+                    <input type="number" name="roundsNumber" [(ngModel)]="roundsNumber">
+                </td>
+                <td>
+                    Tip rezultata
+                </td>
+                <td>
+                    <input type="text" name="resultFormat" [(ngModel)]="resultFormat">
+                </td>
+                <td>
+                    <textarea type="text" class="md-textarea md-textarea-auto form-control" name="additionalComment"
+                        [(ngModel)]="additionalComment" mdbInput></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <span *ngIf='errorGroupNumber' class="errorClass">{{errorGroupNumber}}</span></td>
+                <td> <span *ngIf='errorRepresentativesNumber' class="errorClass">{{errorRepresentativesNumber}}</span>
+                </td>
+                <td> <span *ngIf='errorRoundsNumber' class="errorClass">{{errorRoundsNumber}}</span></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+<br>
+<div>
+    IGRACIII
+
+</div>
+<br>
+<div *ngIf="competitionCreated" class="enterCompetitionMenu successClass">
+    {{alertMessage}}
+</div>

@@ -1,0 +1,30 @@
+<mat-menu>
+</mat-menu>
+
+<div class="container-fluid">
+
+    <div class="row loginMenu">
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="cancelLogIn()" class="matMenuFont">Početna strana</button>
+        </div>
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="confirmLogIn()" class="matMenuFont">Uloguj se</button>
+        </div>
+    </div>
+</div>
+<br>
+<div class="loginMenu">
+    <table>
+        <tr>
+            <td>Korisnicko ime:</td>
+            <td><input type="text" name="username" [(ngModel)]="username"></td>
+            <td> <span *ngIf='errorUsername' class="errorClass">{{errorUsername}}</span></td>
+        </tr>
+        <tr>
+            <td>Lozinka:</td>
+            <td><input type="password" name="password" [(ngModel)]="password"></td>
+            <td> <span *ngIf='errorPassword' class="errorClass">{{errorPassword}}</span></td>
+        </tr>
+    </table>
+</div>
+<br>

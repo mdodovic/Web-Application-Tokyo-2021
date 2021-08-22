@@ -1,0 +1,87 @@
+<mat-menu>
+</mat-menu>
+
+<div class="container-fluid">
+
+    <div class="row playersApplicationsMenu">
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="finishPlayersApplications()" class="matMenuFont">Vrati se nazad</button>
+        </div>
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="confirmPlayer()" class="matMenuFont">Potvrdi takmičara</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="playersApplicationsMenu">
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>Ime:</td>
+                <td><input type="text" name="firstname" [(ngModel)]="firstname"></td>
+                <td> <span *ngIf='errorFirstname' class="errorClass">{{errorFirstname}}</span></td>
+            </tr>
+            <tr>
+                <td>Prezime:</td>
+                <td><input type="text" name="lastname" [(ngModel)]="lastname"></td>
+                <td> <span *ngIf='errorLastname' class="errorClass">{{errorLastname}}</span></td>
+            </tr>
+            <tr>
+                <td>Pol:</td>
+                <td>
+
+                    <input id="manGender" type="radio" name="gender" value="man" [(ngModel)]="gender">
+                    <label for="manGender">Muško</label>
+                    &nbsp;
+                    <input id="womanGender" type="radio" name="gender" value="woman" [(ngModel)]="gender">
+                    <label for="womanGender">Žensko</label>
+
+                </td>
+                <td> <span *ngIf='errorGender' class="errorClass">{{errorGender}}</span></td>
+            </tr>
+
+            <tr>
+                <td>Sport: </td>
+                <td>
+                    <select name="choosenSport" [(ngModel)]="choosenSport" (ngModelChange)="sportIsChoosen()">
+                        <option *ngFor='let s of sports' [ngValue]="s">{{s.name}}</option>
+                    </select>
+                </td>
+                <td> <span *ngIf='errorNoSport' class="errorClass">{{errorNoSport}}</span></td>
+            </tr>
+
+            <tr *ngIf="choosenSport && hasDisciplines">
+                <td>Discipline: </td>
+                <td>
+                    <div>
+                        <select size="10" name="choosenDiscipline" [(ngModel)]="choosenDiscipline" multiple>
+
+                            <option *ngFor='let d of disciplines' [ngValue]="d.disciplineName">{{d.disciplineName}}
+                            </option>
+                        </select>
+                    </div>
+                </td>
+                <td> <span *ngIf='errorNoDiscipline' class="errorClass">{{errorNoDiscipline}}</span></td>
+            </tr>
+            <tr *ngIf="choosenSport && !hasDisciplines">
+                <td colspan="2">
+                    Izabrani sport ne poseduje discipline
+                </td>
+            </tr>
+
+            <tr *ngIf="!choosenSport">
+                <td colspan="2">
+                    Morate označiti željeni sport
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</div>
+<br>
+<div *ngIf="addedPlayer" class="playersApplicationsMenu successClass">
+    {{alertMessage}}
+</div>

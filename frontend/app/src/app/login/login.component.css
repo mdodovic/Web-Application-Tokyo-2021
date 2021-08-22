@@ -1,0 +1,18 @@
+.loginMenu{
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
+}
+
+.matMenuFont{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.errorClass{
+    color: red;
+}
+
+.successClass{
+    color: green;
+}
