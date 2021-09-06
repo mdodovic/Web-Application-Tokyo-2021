@@ -1,0 +1,87 @@
+<mat-menu>
+</mat-menu>
+
+<div id="breadcrumbs" class="teamsFormationMenu">
+    {{breadcrumbs}}
+</div>
+
+<div class="container-fluid">
+
+    <div class="row teamsFormationMenu">
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="finishTeamsFormation()" class="matMenuFont">Vrati se nazad</button>
+        </div>
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="confirmTeam()" class="matMenuFont">Potvrdi ekipu</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="teamsFormationMenu">
+    <table class="table table-striped">
+        <tbody>
+
+            <tr>
+                <td>Sport: </td>
+                <td>
+                    <select name="choosenTeamSport" [(ngModel)]="choosenTeamSport"
+                        (ngModelChange)="teamSportIsChoosen()">
+                        <option *ngFor='let s of teamSports' [ngValue]="s">{{s.name}}</option>
+                    </select>
+                </td>
+                <td> <span *ngIf='errorNoTeamSport' class="errorClass">{{errorNoTeamSport}}</span></td>
+            </tr>
+
+            <tr *ngIf="choosenTeamSport && hasDisciplines">
+                <td>Discipline: </td>
+                <td>
+                    <div>
+                        <select name="choosenTeamDiscipline" [(ngModel)]="choosenTeamDiscipline"
+                            (ngModelChange)="teamDisciplineIsChoosen()">
+                            <option *ngFor='let d of teamDisciplines' [ngValue]="d">{{d.disciplineName}}
+                            </option>
+                        </select>
+                    </div>
+                </td>
+                <td> <span *ngIf='errorNoTeamDiscipline' class="errorClass">{{errorNoTeamDiscipline}}</span></td>
+            </tr>
+            <tr *ngIf="choosenTeamSport && !hasDisciplines">
+                <td colspan="2">
+                    Timski sport nema discipline
+                </td>
+            </tr>
+            <tr *ngIf="showGender">
+                <td>Pol: </td>
+                <td>
+                    <select name="choosenGender" [(ngModel)]="choosenGender" (ngModelChange)="genderIsChoosen()">
+                        <!--                        <option *ngFor='let s of teamSports' [ngValue]="s">{{s.name}}</option>-->
+                        <option *ngFor='let g of genders' [ngValue]="g.english">{{g.serbia}}</option>
+                    </select>
+                </td>
+                <td> <span *ngIf='errorNoGender' class="errorClass">{{errorNoGender}}</span></td>
+            </tr>
+
+            <tr *ngIf="showPlayers">
+                <td>Izaberi: </td>
+                <td *ngIf="hasPlayersForTeam">
+                    <select size="10" name="choosenPlayers" [(ngModel)]="choosenPlayers" multiple>
+                        <option *ngFor='let p of teamPlayers' [ngValue]="p">{{p.firstname}} {{p.lastname}}</option>
+                    </select>
+                </td>
+                <td *ngIf="!hasPlayersForTeam">
+                    Nema prijavljenih igrača!
+                </td>
+                <td> <span *ngIf='errorNoPlayers' class="errorClass">{{errorNoPlayers}}</span></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
+</div>
+<br>
+<div *ngIf="teamCreated" class="teamsFormationMenu successClass">
+    {{alertMessage}}
+</div>

@@ -1,0 +1,8 @@
+Za odbranu je potreban start folder (sa porjektima za backend i frontend).
+
+U folderu back_src je src folder backend dela.
+U folderu front_src je src folder frontend dela.
+U folderu database je 11 fajlova koji sadrze jsone za formiranje 11 kolekcija u bazi. Bazu treba nazvati tokyo_2021.
+U folderu setup je fajl koji sadrži komande za instalaciju i dodavanje paketa (kao i linkove do paketa koji nisu predefinisano instalirani).
+
+

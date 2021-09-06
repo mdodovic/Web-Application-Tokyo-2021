@@ -1,0 +1,25 @@
+header {
+    height:55px;
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 5px;    
+    background-color: whitesmoke;
+}
+
+
+
+
+.olympic_rings_logo {
+    height: 50px;
+    width: 100%;
+}
+
+.headerLogo {
+    float: left;   
+}
+
+.headerName {
+    float: right;   
+}
+

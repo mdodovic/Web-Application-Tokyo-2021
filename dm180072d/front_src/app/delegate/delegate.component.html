@@ -1,0 +1,29 @@
+<mat-menu>
+</mat-menu>
+
+<div id="breadcrumbs" class="delegateMenu">
+    {{breadcrumbs}}
+</div>
+
+<div class="container-fluid">
+
+    <div class="row delegateMenu">
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="enterTimetableForCompetition()" class="matMenuFont">Unesi rasporede
+                takmičenja</button>
+        </div>
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="enterResults()" class="matMenuFont">Unesi rezultate takmičenja</button>
+        </div>
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="logOut()" class="matMenuFont">Odjavi se</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<p class="delegateMenu">
+
+    Dobrodošli delegate&nbsp;<strong> {{delegate.firstname}} {{delegate.lastname}}</strong>!
+
+</p>

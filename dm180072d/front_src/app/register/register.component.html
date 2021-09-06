@@ -1,0 +1,72 @@
+<mat-menu>
+</mat-menu>
+
+<div id="breadcrumbs" class="registerMenu">
+    {{breadcrumbs}}
+</div>
+
+<div class="container-fluid">
+
+    <div class="row registerMenu">
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="cancelRegistration()" class="matMenuFont">Početna strana</button>
+        </div>
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="confirmRegistration()" class="matMenuFont">Potvrdi registraicju</button>
+        </div>
+    </div>
+</div>
+<br>
+<div class="registerMenu">
+    <table>
+        <tr>
+            <td>Korisnicko ime:</td>
+            <td><input type="text" name="username" [(ngModel)]="username"></td>
+            <td> <span *ngIf='errorUsername' class="errorClass">{{errorUsername}}</span></td>
+        </tr>
+        <tr>
+            <td>Lozinka:</td>
+            <td><input type="password" name="password" [(ngModel)]="password"></td>
+            <td> <span *ngIf='errorPassword' class="errorClass">{{errorPassword}}</span></td>
+        </tr>
+        <tr>
+            <td>Potvrdi lozinku:</td>
+            <td><input type="password" name="confirmPassword" [(ngModel)]="confirmPassword"></td>
+            <td> <span *ngIf='errorConfirmPassword' class="errorClass">{{errorConfirmPassword}}</span></td>
+        </tr>
+        <tr>
+            <td>Ime:</td>
+            <td><input type="text" name="firstname" [(ngModel)]="firstname"></td>
+            <td> <span *ngIf='errorFirstname' class="errorClass">{{errorFirstname}}</span></td>
+        </tr>
+        <tr>
+            <td>Prezime:</td>
+            <td><input type="text" name="lastname" [(ngModel)]="lastname"></td>
+            <td> <span *ngIf='errorLastname' class="errorClass">{{errorLastname}}</span></td>
+        </tr>
+        <tr>
+            <td>Zemlja:</td>
+            <td><input type="text" name="country" [(ngModel)]="country"></td>
+            <td> <span *ngIf='errorCountry' class="errorClass">{{errorCountry}}</span></td>
+        </tr>
+        <tr>
+            <td>Elektronska pošta:</td>
+            <td><input type="text" name="email" [(ngModel)]="email"></td>
+            <td> <span *ngIf='errorEmail' class="errorClass">{{errorEmail}}</span></td>
+        </tr>
+        <tr>
+            <td>Tip:</td>
+            <td>
+                <select name="type" [(ngModel)]="type">
+                    <option value="delegate">Delegat</option>
+                    <option value="nationalLeader">Vođa nacionalne delegacije</option>
+                </select>
+            </td>
+            <td> <span *ngIf='errorType' class="errorClass">{{errorType}}</span></td>
+        </tr>
+    </table>
+</div>
+<br>
+<div *ngIf="addedUser" class="registerMenu successClass">
+    {{alertMessage}}
+</div>
