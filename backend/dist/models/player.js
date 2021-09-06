@@ -23,6 +23,15 @@ let Player = new Schema({
     },
     disciplines: {
         type: Array
+    },
+    goldMedals: {
+        type: Array
+    },
+    silverMedals: {
+        type: Array
+    },
+    bronseMedals: {
+        type: Array
     }
 });
 exports.default = mongoose_1.default.model("Player", Player, "players");

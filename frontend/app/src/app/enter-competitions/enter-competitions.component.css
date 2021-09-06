@@ -22,5 +22,10 @@ input[type='number']{
 }
 
 input[type='text']{
-    width: 65px;
+    width: 80px;
+}
+
+.centerContent{
+    text-align: center; 
+    vertical-align: middle;
 }

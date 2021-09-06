@@ -18,6 +18,13 @@ export class UserService {
     return this.http.post(`${this.uri}/users/fetchByUsername`, data);
   }
 
+  fetchByTypeService(type) {
+    const data = {
+      type: type
+    }
+    return this.http.post(`${this.uri}/users/fetchByType`, data);
+  }
+
   fetchByTypeAndCountryService(type, country) {
     const data = {
       type: type,

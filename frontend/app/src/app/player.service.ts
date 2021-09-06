@@ -82,4 +82,16 @@ export class PlayerService {
 
   }
 
+  addMedalService(firstname, lastname, competitionName, medal) {
+    const data = {
+      firstname: firstname,
+      lastname: lastname,
+      competitionName: competitionName,
+      medal: medal
+    }
+
+    return this.http.post(`${this.uri}/players/addMedal`, data);
+
+  }
+
 }

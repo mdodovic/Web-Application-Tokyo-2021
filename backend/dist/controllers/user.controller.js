@@ -22,7 +22,7 @@ class UserController {
             let counrty = req.body.country;
             console.log(type);
             console.log(counrty);
-            user_1.default.findOne({ 'type': type, 'nationality': counrty, 'accepted': 1 }, (err, user) => {
+            user_1.default.findOne({ 'type': type, 'nationality': counrty }, (err, user) => {
                 if (err)
                     console.log(err);
                 else
@@ -41,6 +41,15 @@ class UserController {
             console.log(newPassword);
             user_1.default.collection.updateOne({ 'username': username }, { $set: { 'password': newPassword } });
             res.json({ 'password changed': 'ok' });
+        };
+        this.fetchByType = (req, res) => {
+            let type = req.body.type;
+            user_1.default.find({ 'type': type, 'accepted': 1 }, (err, user) => {
+                if (err)
+                    console.log(err);
+                else
+                    res.json(user);
+            });
         };
     }
 }

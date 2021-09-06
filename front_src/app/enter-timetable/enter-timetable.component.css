@@ -1,0 +1,40 @@
+.enterTimetableMenu{
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
+}
+
+.matMenuFont{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.errorClass{
+    color: red;
+}
+
+.successClass{
+    color: green;
+}
+
+input[type='number']{
+    width: 40px;
+}
+
+input[type='text']{
+    width: 80px;
+}
+
+.centerContent{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.fixFooterProblem{
+    position: relative;        /* for the footer to move with the page size */
+    padding-bottom: 6rem;      /* Space available between last element and bottom border of the page */
+}
+
+#breadcrumbs{
+    background-color: whitesmoke;
+}

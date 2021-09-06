@@ -19,6 +19,10 @@ userRouter.route('/changePasswordByUsername').post(
     (req, res) => new UserController().changePasswordByUsername(req, res)
 );
 
+userRouter.route('/fetchByType').post(
+    (req, res) => new UserController().fetchByType(req, res)
+);
+
 
 
 export default userRouter;

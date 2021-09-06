@@ -126,8 +126,8 @@ export class RegisterComponent implements OnInit {
           console.log(this.country + " # " + this.type)
 
           this.userService.fetchByTypeAndCountryService(this.type, this.country).subscribe((user: User) => {
+            console.log(user);
             if (user) {
-              console.log(user);
               this.errorUsername = "Lider nacionalnog tima već postoji!"
               noErrors = false;
             }

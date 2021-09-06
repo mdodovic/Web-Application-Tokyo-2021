@@ -36,9 +36,20 @@ class NationalTeamController {
             });
             res.json({ "added player to sport-discipline": "OK" });
         };
+        this.fetchBySportDisciplineAndGender = (req, res) => {
+            nationalTeam_1.default.find({
+                'sportName': req.body.sportName,
+                'disciplineName': req.body.disciplineName,
+                'gender': req.body.gender,
+                'accepted': true
+            }, (err, user) => {
+                if (err)
+                    console.log(err);
+                else
+                    res.json(user);
+            });
+        };
     }
 }
 exports.NationalTeamController = NationalTeamController;
-{
-}
 //# sourceMappingURL=nationalTeam.controller.js.map

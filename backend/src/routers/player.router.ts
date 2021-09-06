@@ -31,5 +31,9 @@ playerRouter.route('/fetchByNationality').post(
     (req, res) => new PlayerController().fetchByNationality(req, res)
 );
 
+playerRouter.route('/addMedal').post(
+    (req, res) => new PlayerController().addMedal(req, res)
+);
+
 
 export default playerRouter;

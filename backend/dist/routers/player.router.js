@@ -13,5 +13,6 @@ playerRouter.route('/fetchByNationalitySportDisciplineAndGender').post((req, res
 playerRouter.route('/removePlayer').post((req, res) => new player_controller_1.PlayerController().removePlayer(req, res));
 playerRouter.route('/removeDisciplineFromPlayer').post((req, res) => new player_controller_1.PlayerController().removeDisciplineFromPlayer(req, res));
 playerRouter.route('/fetchByNationality').post((req, res) => new player_controller_1.PlayerController().fetchByNationality(req, res));
+playerRouter.route('/addMedal').post((req, res) => new player_controller_1.PlayerController().addMedal(req, res));
 exports.default = playerRouter;
 //# sourceMappingURL=player.router.js.map

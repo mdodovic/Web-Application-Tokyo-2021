@@ -92,6 +92,37 @@ class PlayerController {
                     res.json(user);
             });
         };
+        this.addMedal = (req, res) => {
+            let medal = req.body.medal;
+            console.log(req.body);
+            if (medal == "goldMedals") {
+                player_1.default.collection.updateOne({
+                    'firstname': req.body.firstname,
+                    'lastname': req.body.lastname,
+                }, {
+                    $push: { "goldMedals": req.body.competitionName }
+                });
+                res.json({ "added medal to player": "OK" });
+            }
+            else if (medal == "silverMedals") {
+                player_1.default.collection.updateOne({
+                    'firstname': req.body.firstname,
+                    'lastname': req.body.lastname,
+                }, {
+                    $push: { "silverMedals": req.body.competitionName }
+                });
+                res.json({ "added medal to player": "OK" });
+            }
+            else {
+                player_1.default.collection.updateOne({
+                    'firstname': req.body.firstname,
+                    'lastname': req.body.lastname,
+                }, {
+                    $push: { "bronseMedals": req.body.competitionName }
+                });
+                res.json({ "added medal to player": "OK" });
+            }
+        };
     }
 }
 exports.PlayerController = PlayerController;

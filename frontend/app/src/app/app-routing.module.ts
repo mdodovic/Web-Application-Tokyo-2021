@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { DelegateComponent } from './delegate/delegate.component';
 import { EnterCompetitionsComponent } from './enter-competitions/enter-competitions.component';
+import { EnterResultsComponent } from './enter-results/enter-results.component';
+import { EnterTimetableComponent } from './enter-timetable/enter-timetable.component';
 import { InitialComponent } from './initial/initial.component';
 import { LoginComponent } from './login/login.component';
 import { NationalLeaderComponent } from './national-leader/national-leader.component';
@@ -25,7 +27,10 @@ const routes: Routes = [
   { path: 'players-applications', component: PlayersApplicationsComponent },
   { path: 'teams-formation', component: TeamsFormationComponent },
   { path: 'show-national-team', component: ShowNationalTeamComponent },
-  { path: 'enter-competitions', component: EnterCompetitionsComponent }
+  { path: 'enter-competitions', component: EnterCompetitionsComponent },
+  { path: 'enter-timetable', component: EnterTimetableComponent },
+  { path: 'enter-results', component: EnterResultsComponent }
+
 ];
 
 @NgModule({

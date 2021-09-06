@@ -18,7 +18,7 @@ export class UserController {
         let counrty = req.body.country;
         console.log(type);
         console.log(counrty);
-        User.findOne({ 'type': type, 'nationality': counrty, 'accepted': 1 },
+        User.findOne({ 'type': type, 'nationality': counrty },
             (err, user) => {
                 if (err) console.log(err);
                 else res.json(user);
@@ -40,6 +40,17 @@ export class UserController {
 
         User.collection.updateOne({ 'username': username }, { $set: { 'password': newPassword } });
         res.json({ 'password changed': 'ok' });
+    }
+
+    fetchByType = (req: express.Request, res: express.Response) => {
+        let type = req.body.type;
+
+        User.find({ 'type': type, 'accepted': 1 },
+            (err, user) => {
+                if (err) console.log(err);
+                else res.json(user);
+            }
+        )
     }
 
 }

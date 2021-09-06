@@ -22,6 +22,8 @@ import { PlayersApplicationsComponent } from './players-applications/players-app
 import { TeamsFormationComponent } from './teams-formation/teams-formation.component';
 import { ShowNationalTeamComponent } from './show-national-team/show-national-team.component';
 import { EnterCompetitionsComponent } from './enter-competitions/enter-competitions.component';
+import { EnterTimetableComponent } from './enter-timetable/enter-timetable.component';
+import { EnterResultsComponent } from './enter-results/enter-results.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { EnterCompetitionsComponent } from './enter-competitions/enter-competiti
     PlayersApplicationsComponent,
     TeamsFormationComponent,
     ShowNationalTeamComponent,
-    EnterCompetitionsComponent
+    EnterCompetitionsComponent,
+    EnterTimetableComponent,
+    EnterResultsComponent
   ],
   imports: [
     BrowserModule,

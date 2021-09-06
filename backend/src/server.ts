@@ -6,6 +6,10 @@ import userRouter from './routers/user.router';
 import sportRouter from './routers/sport.router';
 import playerRouter from './routers/player.router';
 import nationalTeamRouter from './routers/nationalTeam.router';
+import competitionRouter from './routers/competition.router';
+import timetableRouter from './routers/timetable.router';
+import resultRouter from './routers/result.router';
+import stateRouter from './routers/state.router';
 
 
 const app = express();
@@ -26,7 +30,10 @@ router.use('/users', userRouter);
 router.use('/sports', sportRouter);
 router.use('/players', playerRouter);
 router.use('/national-teams', nationalTeamRouter);
-
+router.use('/competitions', competitionRouter);
+router.use('/timetables', timetableRouter);
+router.use('/results', resultRouter);
+router.use('/state', stateRouter);
 
 app.use('/', router);
 app.listen(4000, () => console.log(`Express server running on port 4000`));

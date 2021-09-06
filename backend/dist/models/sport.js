@@ -11,6 +11,9 @@ let Sport = new Schema({
     },
     disciplines: {
         type: Array
+    },
+    possibleLocations: {
+        type: Array
     }
 });
 exports.default = mongoose_1.default.model("Sport", Sport, "sports");
