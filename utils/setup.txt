@@ -1,2 +1,3 @@
 ng add @angular/material
 npm i roundrobin (https://www.npmjs.com/package/roundrobin)
+npm i ngx-pagination (http://michaelbromley.github.io/ngx-pagination/#/)
