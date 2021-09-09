@@ -1,8 +1,0 @@
-footer {
-    bottom: 1%;
-    position: absolute;
-    width: 100%;
-    display: flex; 
-    justify-content:center; 
-    align-items:center;
-}
