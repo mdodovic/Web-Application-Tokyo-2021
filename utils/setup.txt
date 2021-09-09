@@ -1,5 +1,0 @@
-ng add @angular/material
-npm install roundrobin (https://www.npmjs.com/package/roundrobin)
-npm i ngx-pagination (http://michaelbromley.github.io/ngx-pagination/#/)
-npm i chart.js (https://www.npmjs.com/package/chart.js)
-npm i d3 (https://www.npmjs.com/package/d3)
