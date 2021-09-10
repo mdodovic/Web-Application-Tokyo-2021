@@ -1,0 +1,35 @@
+<mat-menu>
+</mat-menu>
+
+
+<div id="breadcrumbs" class="nationalLeaderMenu">
+    {{breadcrumbs}}
+</div>
+
+
+<div class="container-fluid">
+
+    <div class="row nationalLeaderMenu">
+        <div class="col-sm-3">
+            <button mat-menu-item (click)="enterPlayers()" class="matMenuFont">Prijavi takmičare</button>
+        </div>
+        <div class="col-sm-3">
+            <button mat-menu-item (click)="makeTeamsFromPlayers()" class="matMenuFont">Formiraj ekipe</button>
+        </div>
+        <div class="col-sm-3">
+            <button mat-menu-item (click)="showNationalTeam()" class="matMenuFont">Prikaži nacionalni tim</button>
+        </div>
+        <div class="col-sm-3">
+            <button mat-menu-item (click)="logOut()" class="matMenuFont">Odjavi se</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<p class="nationalLeaderMenu">
+
+    Dobrodošli&nbsp;<strong> {{nationalLeader.firstname}} {{nationalLeader.lastname}}</strong>, vođo nacionalne
+    delegacije
+    države&nbsp;<strong>{{nationalLeader.nationality}}</strong>!
+
+</p>
