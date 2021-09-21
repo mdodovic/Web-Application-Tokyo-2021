@@ -1,0 +1,39 @@
+.acceptUsersMenu{
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
+}
+
+.matMenuFont{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.errorClass{
+    color: red;
+}
+
+.successClass{
+    color: green;
+}
+
+input[type='number']{
+    width: 40px;
+}
+
+input[type='text']{
+    width: 80px;
+}
+
+.centerContent{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.maximalResult{
+    background-color: lightgreen;
+}
+
+#breadcrumbs{
+    background-color: whitesmoke;
+}

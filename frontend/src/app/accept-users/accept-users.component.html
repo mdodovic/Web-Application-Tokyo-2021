@@ -1,0 +1,47 @@
+<mat-menu>
+</mat-menu>
+
+<div id="breadcrumbs" class="acceptUsersMenu">
+    {{breadcrumbs}}
+</div>
+
+<div class="container-fluid">
+
+    <div class="row acceptUsersMenu">
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="finishUsersAccepting()" class="matMenuFont">Vrati se nazad</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="acceptUsersMenu">
+    <div class="container">
+        <table class="table table-striped table-bordered centerContent">
+            <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Nacionalnost</th>
+                    <th>Tip</th>
+                    <th>e-mail</th>
+                    <th>username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let u of unacceptedUsers">
+                    <td>{{u.firstname}}</td>
+                    <td>{{u.lastname}}</td>
+                    <td>{{u.nationality}}</td>
+                    <td>{{u.type}}</td>
+                    <td>{{u.email}}</td>
+                    <td>{{u.username}}</td>
+                    <td>
+                        <button mat-menu-item (click)="acceptUser(u)" class="matMenuFont">Prihvati</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<br>
