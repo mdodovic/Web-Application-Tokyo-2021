@@ -1,0 +1,321 @@
+
+{
+    "_id" : ObjectId("612ce5d1426b397829159ce6"),
+    "name" : "Košarka",
+    "disciplines" : [ 
+        {
+            "disciplineName" : null,
+            "single" : false,
+            "minPlayers" : 5,
+            "maxPlayers" : 12,
+            "accepted" : true
+        }
+    ],
+    "possibleLocations" : [ 
+        "Stadion Jokohama", 
+        "Stadion Fukušima Azuma", 
+        "Arena Super Saitama", 
+        "Nacionalni Stadion Jojogi"
+    ]
+}
+
+
+{
+    "_id" : ObjectId("612ce5d1426b397829159ce9"),
+    "name" : "Odbojka",
+    "disciplines" : [ 
+        {
+            "disciplineName" : null,
+            "single" : false,
+            "minPlayers" : 6,
+            "maxPlayers" : 12,
+            "accepted" : true
+        }
+    ],
+    "possibleLocations" : [ 
+        "Park Šiokaze", 
+        "Arena Ariake", 
+        "Šumski Kompleks Musašino", 
+        "Nacionalni Stadion Jojogi"
+    ]
+}
+
+
+{
+    "_id" : ObjectId("612ce5d1426b397829159cec"),
+    "name" : "Vaterpolo",
+    "disciplines" : [ 
+        {
+            "disciplineName" : null,
+            "single" : false,
+            "minPlayers" : 6,
+            "maxPlayers" : 13,
+            "accepted" : false
+        }
+    ],
+    "possibleLocations" : [ 
+        "Vaterpolo Centar Tacumi", 
+        "Tokio Centar Aquantica", 
+        "Morski Park Odaiba"
+    ]
+}
+
+
+{
+    "_id" : ObjectId("612ce5d1426b397829159cef"),
+    "name" : "Atletika",
+    "disciplines" : [ 
+        {
+            "disciplineName" : "100m trčanje",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : true
+        }, 
+        {
+            "disciplineName" : "100m štafeta",
+            "single" : false,
+            "minPlayers" : 4,
+            "maxPlayers" : 4,
+            "accepted" : true
+        }, 
+        {
+            "disciplineName" : "200m trčanje",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : true
+        }, 
+        {
+            "disciplineName" : "400m trčanje",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : true
+        }, 
+        {
+            "disciplineName" : "400m štafeta",
+            "single" : false,
+            "minPlayers" : 4,
+            "maxPlayers" : 4,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "800m trčanje",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "5000m trčanje",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "10000m trčanje",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "skok u vis",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : true
+        }, 
+        {
+            "disciplineName" : "skok u dalj",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "troskok",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "skok s motkom",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "bacanje kugle",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "bacanje diska",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "bacanje kladiva",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "bacanje koplja",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "maraton",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : true
+        }, 
+        {
+            "disciplineName" : "20km brzo hodanje",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "50km brzo hodanje",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }
+    ],
+    "possibleLocations" : [ 
+        "Park Saporo Odori", 
+        "Nacionalni Stadion Jojogi", 
+        "Olimpijski Stadion"
+    ]
+}
+
+
+{
+    "_id" : ObjectId("612ce5d1426b397829159cf2"),
+    "name" : "Biciklizam",
+    "disciplines" : [ 
+        {
+            "disciplineName" : "225km drumska trka",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }
+    ],
+    "possibleLocations" : [ 
+        "Staza Fuji Internacional", 
+        "Dvorana Izu", 
+        "Staza MTB", 
+        "Park Musašinomori"
+    ]
+}
+
+
+{
+    "_id" : ObjectId("612ce5d1426b397829159cf5"),
+    "name" : "Plivanje",
+    "disciplines" : [ 
+        {
+            "disciplineName" : "100m leptir",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "200m slobodno",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }
+    ],
+    "possibleLocations" : [ 
+        "Vaterpolo Centar Tacumi", 
+        "Tokio Centar Aquantica", 
+        "Morski Park Odaiba"
+    ]
+}
+
+
+{
+    "_id" : ObjectId("612ce5d1426b397829159cf8"),
+    "name" : "Streljaštvo",
+    "disciplines" : [ 
+        {
+            "disciplineName" : "50m trostav",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : true
+        }, 
+        {
+            "disciplineName" : "10m vazdušna puška",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : true
+        }, 
+        {
+            "disciplineName" : "25m malokalibarski pištolj",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }, 
+        {
+            "disciplineName" : "10m vazdušni pištolj",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : false
+        }
+    ],
+    "possibleLocations" : [ 
+        "Streljana Asaka", 
+        "Šumski Kompleks Musašino"
+    ]
+}
+
+
+{
+    "_id" : ObjectId("612ce5d1426b397829159cfb"),
+    "name" : "Tenis",
+    "disciplines" : [ 
+        {
+            "disciplineName" : "singl",
+            "single" : true,
+            "minPlayers" : null,
+            "maxPlayers" : null,
+            "accepted" : true
+        }, 
+        {
+            "disciplineName" : "dubl",
+            "single" : false,
+            "minPlayers" : 2,
+            "maxPlayers" : 2,
+            "accepted" : true
+        }
+    ],
+    "possibleLocations" : [ 
+        "Teniski Park Ariake", 
+        "Šumski Kompleks Musašino"
+    ]
+}
