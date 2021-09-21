@@ -3,6 +3,10 @@
 Single page web application made for Olympics Games 2021.
 Full project description can be read [here](./description/Olympic games Tokyo 2021.pdf)
 
+
+[Full project description](./doc/doc.pdf).
+
+
 You can add organizers, national team leaders and delegates.
 
 The organizer can accept sports that can be played at Olympic Games. He can create competition and also accept teams and individual players to participate in the competition. World records in athletics can also be shown to the organizer.
