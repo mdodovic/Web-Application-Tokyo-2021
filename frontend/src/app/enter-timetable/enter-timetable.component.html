@@ -1,0 +1,755 @@
+<mat-menu>
+</mat-menu>
+
+<div id="breadcrumbs" class="enterTimetableMenu">
+    {{breadcrumbs}}
+</div>
+
+<div class="container-fluid">
+
+    <div class="row enterTimetableMenu">
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="finishTimetableEntering()" class="matMenuFont">Vrati se nazad</button>
+        </div>
+        <div class="col-sm-6">
+            <button mat-menu-item (click)="confirmTimetableForCompetition()" class="matMenuFont">Potvrdi
+                raspored</button>
+        </div>
+
+    </div>
+</div>
+<div class="enterTimetableMenu">
+    <table class="table table-striped">
+        <thead>
+
+            <tr>
+                <th>Sport i disciplina</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="centerContent">
+                    <select name="choosenCompetition" [(ngModel)]="choosenCompetition"
+                        (ngModelChange)="competitionIsChoosen()">
+                        <option *ngFor='let c of competitions' [ngValue]="c">[{{genders[c.gender]}}] {{c.sportName}}
+                            {{c.disciplineName}}
+
+                        </option>
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td> <span *ngIf=' errorNoCompetition' class="errorClass">{{ errorNoCompetition}}</span></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+<br>
+<div *ngIf="choosenCompetition" class="enterTimetableMenu fixFooterProblem">
+
+
+    <div class="table-responsive" *ngIf="choosenCompetition.actAsSingle && !choosenCompetition.rankPlayers">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Lokacija
+                    </th>
+                    <th scope="col">
+                        Datum i vreme
+                    </th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="centerContent">
+                        <select name="choosenLocationIndividual" [(ngModel)]="choosenLocationIndividual">
+                            <option *ngFor='let l of locations' [ngValue]="l">{{l}}
+                            </option>
+                        </select>
+                    </td>
+
+                    <td class="centerContent">
+                        <input type="datetime-local" name="choosenDatetimeIndividual"
+                            [(ngModel)]="choosenDatetimeIndividual" value="" min="{{minDatetimeValueIndividual}}"
+                            max="{{maxDatetimeValueIndividual}}">
+                    </td>
+
+                </tr>
+
+                <tr *ngIf='!errorClashingCompetitionsIndividual'>
+                    <td class="centerContent">
+                        <span *ngIf='errorNoChoosenLocationIndividual'
+                            class="errorClass">{{errorNoChoosenLocationIndividual}}</span>
+                    </td>
+                    <td class="centerContent">
+                        <span *ngIf='errorNoChoosenDatetimeCompetitionIndividual'
+                            class="errorClass">{{errorNoChoosenDatetimeCompetitionIndividual}}</span>
+                    </td>
+                </tr>
+                <tr *ngIf='errorClashingCompetitionsIndividual'>
+                    <td colspan="2">
+                        <span class="errorClass">{{errorClashingCompetitionsIndividual}}</span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="table-responsive" *ngIf="choosenCompetition.actAsSingle && choosenCompetition.rankPlayers">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Kolo
+                    </th>
+                    <th scope="col" colspan="8">
+                        Mesto; Datum i vreme <br>
+                        Takmičari
+                    </th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr *ngIf="showEighthFinalTree">
+                    <th scope="row">1/8 finala</th>
+                    <td *ngFor="let i of eighthFinalTreeArray" colspan="1" class="centerContent">
+                        <div class="table-responsive enterTimetableMenu">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select name="choosenLocationTree[i]" [(ngModel)]="choosenLocationTree[i]">
+                                                <option *ngFor='let l of locations' [ngValue]="l">
+                                                    {{l}}
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="datetime-local" name="choosenDatetimeTree[i]"
+                                                [(ngModel)]="choosenDatetimeTree[i]" value=""
+                                                min="{{minDatetimeValueIndividual}}"
+                                                max="{{maxDatetimeValueIndividual}}">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            {{indexesTree[i]}}.
+                                            [{{competitors[indexesTree[i] - 1].nationality}}]
+                                            {{competitors[indexesTree[i] - 1].representation}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            {{indexesTree[i] + 8}}.
+                                            [{{competitors[indexesTree[i] - 1 + 8].nationality}}]
+                                            {{competitors[indexesTree[i] - 1 + 8].representation}}
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenLocationTree[i]'
+                                                class="errorClass">{{errorNoChoosenLocationTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenDatetimeCompetitionTree[i]'
+                                                class="errorClass">{{errorNoChoosenDatetimeCompetitionTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='errorClashingCompetitionsTree[i]'>
+                                        <td colspan="2">
+                                            <span class="errorClass">{{errorClashingCompetitionsTree[i]}}</span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr *ngIf="showQuarterFinalTree">
+                    <th scope="row">1/4 finala</th>
+                    <td *ngFor="let i of quarterFinalTreeArray" colspan="2" class="centerContent">
+                        <div class="table-responsive enterTimetableMenu">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select name="choosenLocationTree[i]" [(ngModel)]="choosenLocationTree[i]">
+                                                <option *ngFor='let l of locations' [ngValue]="l">
+                                                    {{l}}
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="datetime-local" name="choosenDatetimeTree[i]"
+                                                [(ngModel)]="choosenDatetimeTree[i]" value=""
+                                                min="{{minDatetimeValueIndividual}}"
+                                                max="{{maxDatetimeValueIndividual}}">
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="!showEighthFinalTree">
+                                        <td>
+                                            {{indexesTree[i]}}.
+                                            [{{competitors[indexesTree[i] - 1].nationality}}]
+                                            {{competitors[indexesTree[i] - 1].representation}}
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="!showEighthFinalTree">
+                                        <td>
+                                            {{indexesTree[i] + 4}}.
+                                            [{{competitors[indexesTree[i] - 1 + 4].nationality}}]
+                                            {{competitors[indexesTree[i] - 1 + 4].representation}}
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="showEighthFinalTree" aria-rowspan="2">
+                                        <td>
+                                            Nisu poznati učesnici
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenLocationTree[i]'
+                                                class="errorClass">{{errorNoChoosenLocationTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenDatetimeCompetitionTree[i]'
+                                                class="errorClass">{{errorNoChoosenDatetimeCompetitionTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='errorClashingCompetitionsTree[i]'>
+                                        <td colspan="2">
+                                            <span class="errorClass">{{errorClashingCompetitionsTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr *ngIf="showSemiFinalTree">
+                    <th scope="row">1/2 finala</th>
+                    <td *ngFor="let i of semiFinalTreeArray" colspan="4" class="centerContent">
+                        <div class="table-responsive enterTimetableMenu">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select name="choosenLocationTree[i]" [(ngModel)]="choosenLocationTree[i]">
+                                                <option *ngFor='let l of locations' [ngValue]="l">
+                                                    {{l}}
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="datetime-local" name="choosenDatetimeTree[i]"
+                                                [(ngModel)]="choosenDatetimeTree[i]" value=""
+                                                min="{{minDatetimeValueIndividual}}"
+                                                max="{{maxDatetimeValueIndividual}}">
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="!showQuarterFinalTree">
+                                        <td>
+                                            {{indexesTree[i]}}.
+                                            [{{competitors[indexesTree[i] - 1].nationality}}]
+                                            {{competitors[indexesTree[i] - 1].representation}}
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="!showQuarterFinalTree">
+                                        <td>
+                                            {{indexesTree[i] + 2}}.
+                                            [{{competitors[indexesTree[i] - 1 + 2].nationality}}]
+                                            {{competitors[indexesTree[i] - 1 + 2].representation}}
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="showQuarterFinalTree">
+                                        <td>
+                                            Nisu poznati učesnici
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenLocationTree[i]'
+                                                class="errorClass">{{errorNoChoosenLocationTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenDatetimeCompetitionTree[i]'
+                                                class="errorClass">{{errorNoChoosenDatetimeCompetitionTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='errorClashingCompetitionsTree[i]'>
+                                        <td colspan="2">
+                                            <span class="errorClass">{{errorClashingCompetitionsTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Meč za <br> 3. mesto</th>
+                    <td *ngFor="let i of thirdPlaceTreeArray" colspan="8" class="centerContent">
+                        <div class="table-responsive enterTimetableMenu">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select name="choosenLocationTree[i]" [(ngModel)]="choosenLocationTree[i]">
+                                                <option *ngFor='let l of locations' [ngValue]="l">
+                                                    {{l}}
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="datetime-local" name="choosenDatetimeTree[i]"
+                                                [(ngModel)]="choosenDatetimeTree[i]" value=""
+                                                min="{{minDatetimeValueIndividual}}"
+                                                max="{{maxDatetimeValueIndividual}}">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Nisu poznati učesnici
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenLocationTree[i]'
+                                                class="errorClass">{{errorNoChoosenLocationTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenDatetimeCompetitionTree[i]'
+                                                class="errorClass">{{errorNoChoosenDatetimeCompetitionTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='errorClashingCompetitionsTree[i]'>
+                                        <td colspan="2">
+                                            <span class="errorClass">{{errorClashingCompetitionsTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Finale</th>
+                    <td *ngFor="let i of firstPlaceTreeArray" colspan="8" class="centerContent">
+                        <div class="table-responsive enterTimetableMenu">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select name="choosenLocationTree[i]" [(ngModel)]="choosenLocationTree[i]">
+                                                <option *ngFor='let l of locations' [ngValue]="l">
+                                                    {{l}}
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="datetime-local" name="choosenDatetimeTree[i]"
+                                                [(ngModel)]="choosenDatetimeTree[i]" value=""
+                                                min="{{minDatetimeValueIndividual}}"
+                                                max="{{maxDatetimeValueIndividual}}">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Nisu poznati učesnici
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenLocationTree[i]'
+                                                class="errorClass">{{errorNoChoosenLocationTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!errorClashingCompetitionsTree[i]'>
+                                        <td>
+                                            <span *ngIf='errorNoChoosenDatetimeCompetitionTree[i]'
+                                                class="errorClass">{{errorNoChoosenDatetimeCompetitionTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='errorClashingCompetitionsTree[i]'>
+                                        <td colspan="2">
+                                            <span class="errorClass">{{errorClashingCompetitionsTree[i]}}</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-responsive" *ngIf="!choosenCompetition.actAsSingle">
+        <button mat-menu-item class="matMenuFont centerContent" (click)='randomDivideTeamsToGroups()'
+            *ngIf="groupBeginning && !groupPhaseFinished">
+            Rasporedi ekipe u {{choosenCompetition.groupNumber}} grupe
+        </button>
+        <div *ngIf="!groupBeginning && !groupPhaseFinished">
+            <table class="table" *ngFor="let g of groups">
+                <thead>
+                    <tr>
+                        <th>
+                            Grupa {{g.groupNumber}}
+                        </th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let r of g.groupContent">
+
+                        <th scope="row">
+                            Runda {{r.roundNumber}}
+                        </th>
+
+                        <td *ngFor="let match of r.roundContent" class="centerContent">
+                            <div class="table-responsive enterTimetableMenu">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <select disabled="{{finishedWithEnteringGroupPhase}}"
+                                                    name="groupLocationsChoosen"
+                                                    [(ngModel)]="groupLocations[g.groupNumber].groupContent[r.roundNumber].roundContent[match.index].location">
+                                                    <option *ngFor='let l of locations' [ngValue]="l">
+                                                        {{l}}
+                                                    </option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input [readonly]="finishedWithEnteringGroupPhase" type="datetime-local"
+                                                    name="groupDatetimeChoosen"
+                                                    [(ngModel)]="groupDatetime[g.groupNumber].groupContent[r.roundNumber].roundContent[match.index].datetime"
+                                                    value="" min="{{minDatetimeValueIndividual}}"
+                                                    max="{{maxDatetimeValueIndividual}}">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                1. {{match.nationality1}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                2. {{match.nationality2}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                *ngIf="errorNoTimetable && !groupLocations[g.groupNumber].groupContent[r.roundNumber].roundContent[match.index].location">
+                                                <span class="errorClass">Unesite lokaciju!</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                *ngIf="errorNoTimetable && !groupDatetime[g.groupNumber].groupContent[r.roundNumber].roundContent[match.index].datetime">
+                                                <span class="errorClass">Unesite datum i vreme!</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                *ngIf='errorClashingCompetitionsGroup[g.groupNumber].groupContent[r.roundNumber].roundContent[match.index].error'>
+                                                <span class="errorClass">
+                                                    {{errorClashingCompetitionsGroup[g.groupNumber].groupContent[r.roundNumber].roundContent[match.index].error}}
+                                                </span>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <br>
+        <div *ngIf="!groupBeginning && !groupPhaseFinished" class="enterTimetableMenu centerContent">
+            <input type="checkbox" name='needTreeTimetable' [(ngModel)]='needTreeTimetable'>
+            Unesi rasporede 1/4 finala, 1/2 finala, meča za 3. mesto i finalnog meča
+        </div>
+        <div *ngIf="needTreeTimetable || groupPhaseFinished" class="enterTimetableMenu centerContent">
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            Kolo
+                        </th>
+                        <th scope="col" colspan="8">
+                            Mesto; Datum i vreme <br>
+                            Takmičari
+                        </th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1/4 finala</th>
+                        <td *ngFor="let i of quarterFinalTreeArray" colspan="2" class="centerContent">
+                            <div class="table-responsive enterTimetableMenu">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <select name="choosenLocationTree[i]"
+                                                    [(ngModel)]="choosenLocationTree[i]">
+                                                    <option *ngFor='let l of locations' [ngValue]="l">
+                                                        {{l}}
+                                                    </option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="datetime-local" name="choosenDatetimeTree[i]"
+                                                    [(ngModel)]="choosenDatetimeTree[i]" value=""
+                                                    min="{{minDatetimeValueIndividual}}"
+                                                    max="{{maxDatetimeValueIndividual}}">
+                                            </td>
+                                        </tr>
+                                        <tr *ngIf="groupPhaseFinished">
+                                            <td>
+                                                1. {{competitors[indexesTree[i] - 1].nationality}}
+                                            </td>
+                                        </tr>
+                                        <tr *ngIf="groupPhaseFinished">
+                                            <td>
+                                                2. {{competitors[indexesTree[i] - 1 + 4].nationality}}
+                                            </td>
+                                        </tr>
+                                        <tr *ngIf="!groupPhaseFinished" aria-rowspan="2">
+                                            <td>
+                                                Nisu poznati učesnici
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td *ngIf="errorNoTimetable && !choosenLocationTree[i]">
+                                                <span class="errorClass">Unesite lokaciju!</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td *ngIf="errorNoTimetable && !choosenDatetimeTree[i]">
+                                                <span class="errorClass">Unesite datum i vreme!</span>
+                                            </td>
+                                        </tr>
+                                        <tr *ngIf='errorClashingCompetitionsTree[i]'>
+                                            <td>
+                                                <span class="errorClass">{{errorClashingCompetitionsTree[i]}}</span>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">1/2 finala</th>
+                        <td *ngFor="let i of semiFinalTreeArray" colspan="4" class="centerContent">
+                            <div class="table-responsive enterTimetableMenu">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <select name="choosenLocationTree[i]"
+                                                    [(ngModel)]="choosenLocationTree[i]">
+                                                    <option *ngFor='let l of locations' [ngValue]="l">
+                                                        {{l}}
+                                                    </option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="datetime-local" name="choosenDatetimeTree[i]"
+                                                    [(ngModel)]="choosenDatetimeTree[i]" value=""
+                                                    min="{{minDatetimeValueIndividual}}"
+                                                    max="{{maxDatetimeValueIndividual}}">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Nisu poznati učesnici
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td *ngIf="errorNoTimetable && !choosenLocationTree[i]">
+                                                <span class="errorClass">Unesite lokaciju!</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td *ngIf="errorNoTimetable && !choosenDatetimeTree[i]">
+                                                <span class="errorClass">Unesite datum i vreme!</span>
+                                            </td>
+                                        </tr>
+                                        <tr *ngIf='errorClashingCompetitionsTree[i]'>
+                                            <td>
+                                                <span class="errorClass">{{errorClashingCompetitionsTree[i]}}</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Meč za <br> 3. mesto</th>
+                        <td *ngFor="let i of thirdPlaceTreeArray" colspan="8" class="centerContent">
+                            <div class="table-responsive enterTimetableMenu">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <select name="choosenLocationTree[i]"
+                                                    [(ngModel)]="choosenLocationTree[i]">
+                                                    <option *ngFor='let l of locations' [ngValue]="l">
+                                                        {{l}}
+                                                    </option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="datetime-local" name="choosenDatetimeTree[i]"
+                                                    [(ngModel)]="choosenDatetimeTree[i]" value=""
+                                                    min="{{minDatetimeValueIndividual}}"
+                                                    max="{{maxDatetimeValueIndividual}}">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Nisu poznati učesnici
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td *ngIf="errorNoTimetable && !choosenLocationTree[i]">
+                                                <span class="errorClass">Unesite lokaciju!</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td *ngIf="errorNoTimetable && !choosenDatetimeTree[i]">
+                                                <span class="errorClass">Unesite datum i vreme!</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td *ngIf='errorClashingCompetitionsTree[i]'>
+                                                <span class="errorClass">{{errorClashingCompetitionsTree[i]}}</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Finale</th>
+                        <td *ngFor="let i of firstPlaceTreeArray" colspan="8" class="centerContent">
+                            <div class="table-responsive enterTimetableMenu">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <select name="choosenLocationTree[i]"
+                                                    [(ngModel)]="choosenLocationTree[i]">
+                                                    <option *ngFor='let l of locations' [ngValue]="l">
+                                                        {{l}}
+                                                    </option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="datetime-local" name="choosenDatetimeTree[i]"
+                                                    [(ngModel)]="choosenDatetimeTree[i]" value=""
+                                                    min="{{minDatetimeValueIndividual}}"
+                                                    max="{{maxDatetimeValueIndividual}}">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Nisu poznati učesnici
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td *ngIf="errorNoTimetable && !choosenLocationTree[i]">
+                                                <span class="errorClass">Unesite lokaciju!</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td *ngIf="errorNoTimetable && !choosenDatetimeTree[i]">
+                                                <span class="errorClass">Unesite datum i vreme!</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td *ngIf='errorClashingCompetitionsTree[i]'>
+                                                <span class="errorClass">{{errorClashingCompetitionsTree[i]}}</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+</div>
+
+
+<br>
+<div *ngIf="timetableCreated" class="enterTimetableMenu successClass">
+    {{alertMessage}}
+</div>
