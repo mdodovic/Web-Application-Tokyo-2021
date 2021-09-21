@@ -1,6 +1,7 @@
 import express from "express";
 import Sport from "../models/sport";
 
+
 export class SportController {
 
     fetchAllSports = (req: express.Request, res: express.Response) => {
