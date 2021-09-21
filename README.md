@@ -1,7 +1,7 @@
 # Web-Application-Tokyo-Olimpics-2021
 
 Single page web application made for Olympics Games 2021.
-Full project description can be read [here](./description/Olympic games Tokyo 2021.pdf)
+Full project description can be read [here](./description/Olympic games Tokyo 2021.pdf).
 
 
 [Full project description](./doc/doc.pdf).
