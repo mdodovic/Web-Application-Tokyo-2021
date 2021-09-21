@@ -1,0 +1,100 @@
+<mat-menu>
+</mat-menu>
+
+<div id="breadcrumbs" class="medalsStatisticsMenu">
+    {{breadcrumbs}}
+</div>
+
+<div class="container-fluid">
+
+    <div class="row medalsStatisticsMenu">
+        <div class="col-sm-4">
+            <button mat-menu-item (click)="finishShowingMedalsStatistics()" class="matMenuFont">Vrati se nazad</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="medalsStatisticsMenu" *ngIf="paginationShow">
+
+    <table class="table centerContent">
+        <tbody>
+            <tr>
+                <td>Rang</td>
+                <td>Zemlja</td>
+                <td>Zlatno</td>
+                <td>Srebro</td>
+                <td>Bronza</td>
+                <td>Ukupno</td>
+            </tr>
+            <tr *ngFor="let s of statesStatistics  | paginate: {itemsPerPage: 10, currentPage: p, id: 'statistics'};">
+                <td>
+                    {{s.rank}}
+                </td>
+                <td>
+                    {{s.state}}
+                </td>
+                <td>
+                    {{s.gold}}
+                </td>
+                <td>
+                    {{s.silver}}
+                </td>
+                <td>
+                    {{s.bronse}}
+                </td>
+                <td>
+                    {{s.total}}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <pagination-controls (pageChange)="p = $event" id="statistics"></pagination-controls>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+
+<div class="medalsStatisticsMenu" *ngIf="!paginationShow">
+
+    <table class="table centerContent">
+        <tbody>
+            <tr>
+                <td>Rang</td>
+                <td>Zemlja</td>
+                <td>Zlatno</td>
+                <td>Srebro</td>
+                <td>Bronza</td>
+                <td>Ukupno</td>
+            </tr>
+            <tr *ngFor="let s of statesStatistics">
+                <td>
+                    {{s.rank}}
+                </td>
+                <td>
+                    {{s.state}}
+                </td>
+                <td>
+                    {{s.gold}}
+                </td>
+                <td>
+                    {{s.silver}}
+                </td>
+                <td>
+                    {{s.bronse}}
+                </td>
+                <td>
+                    {{s.total}}
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+<br>
+<br>
+<br>
